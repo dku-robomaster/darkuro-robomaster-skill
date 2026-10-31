@@ -1,0 +1,4 @@
+interface:
+  display_name: "DKU RoboMaster 战队助手"
+  short_description: "结合战队背景与随包规则资料，核对规则、比较方案并协助培训和研发。"
+  default_prompt: "使用 $dku-robomaster，先读取战队背景和最新资料，帮我继续当前的 RoboMaster 任务。"

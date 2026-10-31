@@ -1,0 +1,150 @@
+{
+  "bundled_at": "2026-11-01",
+  "source_note": "Original PDF copies preserved byte-for-byte. Check current official versions before applying rules.",
+  "rules": [
+    {
+      "name": "RoboMaster 2026 机甲大师高校联盟赛（上海站）参赛手册V2.0.pdf",
+      "original": "assets/rules-originals/2026/RoboMaster 2026 机甲大师高校联盟赛（上海站）参赛手册V2.0.pdf",
+      "sha256": "4b5b6227c62ec30bf4165caeed1219b5d90cd27b5078918e417c00a6e8105393",
+      "size_bytes": 4598177,
+      "source_path": "robomaster资源/规则 Rules/2026/RoboMaster 2026 机甲大师高校联盟赛（上海站）参赛手册V2.0.pdf"
+    },
+    {
+      "name": "RoboMaster_2026_University_Championship_Rule_Manual_V2.1.0（20260717）.pdf",
+      "original": "assets/rules-originals/2026/RoboMaster_2026_University_Championship_Rule_Manual_V2.1.0（20260717）.pdf",
+      "sha256": "0bc39158a89c2abafa8b5eff7ca4d7c66df775fefcb00d3531d27db6409bb62d",
+      "size_bytes": 15106378,
+      "source_path": "robomaster资源/规则 Rules/2026/RoboMaster_2026_University_Championship_Rule_Manual_V2.1.0（20260717）.pdf"
+    },
+    {
+      "name": "RoboMaster_2026_University_League_Participant_Manual_V1.1.0（20251225）.pdf",
+      "original": "assets/rules-originals/2026/RoboMaster_2026_University_League_Participant_Manual_V1.1.0（20251225）.pdf",
+      "sha256": "377ac11e8ec204dcb14e7364ac187f600a17f81eedc17e76964383e5cd2c33dd",
+      "size_bytes": 1027541,
+      "source_path": "robomaster资源/规则 Rules/2026/RoboMaster_2026_University_League_Participant_Manual_V1.1.0（20251225）.pdf"
+    },
+    {
+      "name": "RoboMaster_2026_University_League_Rule_Manual_V1.2.0（20260113）.pdf",
+      "original": "assets/rules-originals/2026/RoboMaster_2026_University_League_Rule_Manual_V1.2.0（20260113）.pdf",
+      "sha256": "ff785ccb7bbe1e6eeacfd2914f6a63062dbb2bcff963ffd7939489379c24c724",
+      "size_bytes": 4049363,
+      "source_path": "robomaster资源/规则 Rules/2026/RoboMaster_2026_University_League_Rule_Manual_V1.2.0（20260113）.pdf"
+    },
+    {
+      "name": "RoboMaster_2026_University_Series_Robot_Specification_Manual_V1.2.0（20260107）.pdf",
+      "original": "assets/rules-originals/2026/RoboMaster_2026_University_Series_Robot_Specification_Manual_V1.2.0（20260107）.pdf",
+      "sha256": "756ad473e6a2159c45f50313b0b01ca1fb40150e6dda6ba3c763f3567ffa0d65",
+      "size_bytes": 7296763,
+      "source_path": "robomaster资源/规则 Rules/2026/RoboMaster_2026_University_Series_Robot_Specification_Manual_V1.2.0（20260107）.pdf"
+    },
+    {
+      "name": "RoboMaster_2026_机甲大师高校系列赛机器人制作规范手册V1.3.0（20260209）.pdf",
+      "original": "assets/rules-originals/2026/RoboMaster_2026_机甲大师高校系列赛机器人制作规范手册V1.3.0（20260209）.pdf",
+      "sha256": "719be52a2259644ea1a09ef6b697310cc9ddc2653002828bf00f59b2ff9a664e",
+      "size_bytes": 7378194,
+      "source_path": "robomaster资源/规则 Rules/2026/RoboMaster_2026_机甲大师高校系列赛机器人制作规范手册V1.3.0（20260209）.pdf"
+    },
+    {
+      "name": "RoboMaster_2026_机甲大师高校联盟赛比赛规则手册_V1.2.0（20260109）.pdf",
+      "original": "assets/rules-originals/2026/RoboMaster_2026_机甲大师高校联盟赛比赛规则手册_V1.2.0（20260109）.pdf",
+      "sha256": "8d825c9eb62238288ddcf1cc962cbab3e25d7c683c2355f230b5930f18fe60d1",
+      "size_bytes": 4020221,
+      "source_path": "robomaster资源/规则 Rules/2026/RoboMaster_2026_机甲大师高校联盟赛比赛规则手册_V1.2.0（20260109）.pdf"
+    },
+    {
+      "name": "RoboMaster_2026_机甲大师高校联盟赛（华北站）参赛手册V2.0.pdf",
+      "original": "assets/rules-originals/2026/RoboMaster_2026_机甲大师高校联盟赛（华北站）参赛手册V2.0.pdf",
+      "sha256": "caa58f2fa283d35d93a2051fb7da82f1c651490bd0658a50064f96c2207b83bf",
+      "size_bytes": 3839850,
+      "source_path": "robomaster资源/规则 Rules/2026/RoboMaster_2026_机甲大师高校联盟赛（华北站）参赛手册V2.0.pdf"
+    },
+    {
+      "name": "RoboMaster_2027_University_Championship_Participant_Manual_V1.0.0（20261020）.pdf",
+      "original": "assets/rules-originals/2026/RoboMaster_2027_University_Championship_Participant_Manual_V1.0.0（20261020）.pdf",
+      "sha256": "e3311835d670227162f252d92a4365662a6b0c96faa0e42931bd703ea4ed5673",
+      "size_bytes": 4720602,
+      "source_path": "robomaster资源/规则 Rules/2026/RoboMaster_2027_University_Championship_Participant_Manual_V1.0.0（20261020）.pdf"
+    },
+    {
+      "name": "RoboMaster_2026_University_Series_Communication_Protocol_V2.0.0（20260630）.pdf",
+      "original": "assets/rules-originals/RoboMaster_2026_University_Series_Communication_Protocol_V2.0.0（20260630）.pdf",
+      "sha256": "156aa1311d9a5475095ff9c1a07aa0e67813411ec75df24b2970252ad9b89f70",
+      "size_bytes": 2078053,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_2026_University_Series_Communication_Protocol_V2.0.0（20260630）.pdf"
+    },
+    {
+      "name": "RoboMaster_2026_机甲大师高校系列赛通信协议_V2.0.0（20260626） (1).pdf",
+      "original": "assets/rules-originals/RoboMaster_2026_机甲大师高校系列赛通信协议_V2.0.0（20260626） (1).pdf",
+      "sha256": "8fdc484c58d503a3fb68f7c0515ae618b68eb2b058a8c876e1add5eeb8a7d81b",
+      "size_bytes": 2039054,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_2026_机甲大师高校系列赛通信协议_V2.0.0（20260626） (1).pdf"
+    },
+    {
+      "name": "RoboMaster_2027_University_League_Participant_Manual_V1.0.0（20261020）.pdf",
+      "original": "assets/rules-originals/RoboMaster_2027_University_League_Participant_Manual_V1.0.0（20261020）.pdf",
+      "sha256": "174b2fddbcf8a9ee7a06200f704f373b3c30e975d80772a3510662ebeb5bf4ca",
+      "size_bytes": 4601399,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_2027_University_League_Participant_Manual_V1.0.0（20261020）.pdf"
+    },
+    {
+      "name": "RoboMaster_2027_机甲大师高校系列赛机器人制作规范手册V1.0.0（20261015） (1).pdf",
+      "original": "assets/rules-originals/RoboMaster_2027_机甲大师高校系列赛机器人制作规范手册V1.0.0（20261015） (1).pdf",
+      "sha256": "3287fe5f521f8801ce69632032ea17a9c8d8a099091558f58618cd7721154a3c",
+      "size_bytes": 18240763,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_2027_机甲大师高校系列赛机器人制作规范手册V1.0.0（20261015） (1).pdf"
+    },
+    {
+      "name": "RoboMaster_2027_机甲大师高校联盟赛参赛手册V1.0.0（20261015） (1).pdf",
+      "original": "assets/rules-originals/RoboMaster_2027_机甲大师高校联盟赛参赛手册V1.0.0（20261015） (1).pdf",
+      "sha256": "969fb865b7dca28360325d198fd47a7158cb7c8cfe3e0fd6d51bc556b67b2950",
+      "size_bytes": 1130880,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_2027_机甲大师高校联盟赛参赛手册V1.0.0（20261015） (1).pdf"
+    },
+    {
+      "name": "RoboMaster_2027_机甲大师高校联盟赛比赛规则手册_V1.0.0（20261015） (1).pdf",
+      "original": "assets/rules-originals/RoboMaster_2027_机甲大师高校联盟赛比赛规则手册_V1.0.0（20261015） (1).pdf",
+      "sha256": "a8fd7b7f6ea5212b9e4dfa590b478827992598d91912ed671653c8bdd9727fd6",
+      "size_bytes": 13455593,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_2027_机甲大师高校联盟赛比赛规则手册_V1.0.0（20261015） (1).pdf"
+    },
+    {
+      "name": "RoboMaster_Referee_System_Serial_Port_Protocol_V1.9.0（20250704）.pdf",
+      "original": "assets/rules-originals/RoboMaster_Referee_System_Serial_Port_Protocol_V1.9.0（20250704）.pdf",
+      "sha256": "9f048fd98aeed7876e1dfe906e6099b3bbbe4947e944d4e3e377e08be3135354",
+      "size_bytes": 1617472,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_Referee_System_Serial_Port_Protocol_V1.9.0（20250704）.pdf"
+    },
+    {
+      "name": "RoboMaster_裁判系统_FAQ_V2.4（20260130）.pdf",
+      "original": "assets/rules-originals/RoboMaster_裁判系统_FAQ_V2.4（20260130）.pdf",
+      "sha256": "554907d9044d4f35c529d961b900c82039738350c67ba9bd62c3ccdb87ef045a",
+      "size_bytes": 749616,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_裁判系统_FAQ_V2.4（20260130）.pdf"
+    },
+    {
+      "name": "RoboMaster_裁判系统串口协议附录_V1.9.0（20250703） (1).pdf",
+      "original": "assets/rules-originals/RoboMaster_裁判系统串口协议附录_V1.9.0（20250703） (1).pdf",
+      "sha256": "05472b95bacd42c5750231130be238f982c19c9c505f2f7eb2942c932aa65ba9",
+      "size_bytes": 1486528,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_裁判系统串口协议附录_V1.9.0（20250703） (1).pdf"
+    },
+    {
+      "name": "RoboMaster_裁判系统用户手册V1.5.pdf",
+      "original": "assets/rules-originals/RoboMaster_裁判系统用户手册V1.5.pdf",
+      "sha256": "2f11c4dc995989494c3e9aa8be2b01a120efb8f472ab48e8576767ba0939a021",
+      "size_bytes": 4521622,
+      "source_path": "robomaster资源/规则 Rules/RoboMaster_裁判系统用户手册V1.5.pdf"
+    }
+  ],
+  "source_copy_date": "2026-10-30",
+  "format": "original-pdf",
+  "core_documents": [
+    {
+      "name": "division-roles-original.pdf",
+      "original": "assets/division-roles-original.pdf",
+      "sha256": "f516c42b8617eaf9e24fe8358144023ee9de420752e604852b1bd95973482526",
+      "size_bytes": 33902,
+      "source_path": "position description/dku robomaster - position descriptions.pdf"
+    }
+  ]
+}
