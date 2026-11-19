@@ -1,6 +1,6 @@
 {
-  "bundled_at": "2026-11-01",
-  "source_note": "Original PDF copies preserved byte-for-byte. Check current official versions before applying rules.",
+  "bundled_at": "2026-11-18",
+  "source_note": "Original PDF and XLSX copies preserved byte-for-byte. Check current official versions before applying rules.",
   "rules": [
     {
       "name": "RoboMaster 2026 机甲大师高校联盟赛（上海站）参赛手册V2.0.pdf",
@@ -134,10 +134,18 @@
       "sha256": "2f11c4dc995989494c3e9aa8be2b01a120efb8f472ab48e8576767ba0939a021",
       "size_bytes": 4521622,
       "source_path": "robomaster资源/规则 Rules/RoboMaster_裁判系统用户手册V1.5.pdf"
+    },
+    {
+      "name": "RMU2027官方规则答疑.xlsx",
+      "original": "assets/rules-originals/RMU2027官方规则答疑.xlsx",
+      "sha256": "33a95cca18760609e359448829a4ba2fe51c0cb29dfc6ffacb07d4f511f11fc6",
+      "size_bytes": 274814,
+      "source_path": "",
+      "source_copy_date": "2026-11-18"
     }
   ],
   "source_copy_date": "2026-10-30",
-  "format": "original-pdf",
+  "format": "original-documents",
   "core_documents": [
     {
       "name": "division-roles-original.pdf",

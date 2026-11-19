@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Locate bundled original PDFs by filename and catalogue metadata."""
+"""Locate bundled original PDF and XLSX documents by filename and catalogue metadata."""
 import argparse
 import json
 from pathlib import Path
@@ -16,14 +16,16 @@ def load():
         for item in catalog.get(key, []):
             path = (ROOT / item["original"]).resolve()
             if not path.is_relative_to(ROOT) or not path.is_file():
-                raise ValueError("Missing or invalid PDF path: " + item["original"])
+                raise ValueError("Missing or invalid document path: " + item["original"])
             year = re.search(r"20\d{2}", item["name"])
             version = re.search(r"V\d+(?:\.\d+)*", item["name"])
             records.append({
                 "name": item["name"], "category": category,
                 "season_in_filename": int(year.group()) if year else None,
                 "version_in_filename": version.group() if version else None,
-                "relative_path": item["original"], "pdf_path": str(path),
+                "relative_path": item["original"],
+                "file_path": str(path), "file_type": path.suffix.lower().lstrip("."),
+                **({"pdf_path": str(path)} if path.suffix.lower() == ".pdf" else {}),
                 "size_bytes": item["size_bytes"], "sha256": item["sha256"]
             })
     records.sort(key=lambda r: (-(r["season_in_filename"] or 0), r["name"]))
@@ -46,7 +48,7 @@ def main():
             records = [r for r in records if all(t in (r["name"] + " " + r["relative_path"]).casefold() for t in terms)]
         result = {"bundled_at": date, "total_matches": len(records),
                   "results": records[:max(1, min(args.limit, 100))],
-                  "next_step": "Open pdf_path with a PDF reader; this catalogue does not search document bodies."}
+                  "next_step": "Open file_path with a PDF or spreadsheet reader according to file_type; this catalogue does not search document bodies."}
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0
     except (OSError, ValueError, KeyError, TypeError) as error:

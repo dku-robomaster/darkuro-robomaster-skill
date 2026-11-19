@@ -1,11 +1,12 @@
-# 原始 PDF 文件目录
+# 原始资料文件目录
 
-本版整理于 2026-11-01。通过原始文件名选择 PDF，然后直接阅读原件；文件目录不包含资料正文。
+本版更新于 2026-11-18。通过原始文件名选择 PDF 或 XLSX，然后直接阅读原件；文件目录不包含资料正文。
 
 ## 定位文件
 
-- `python3 scripts/pdf_catalog.py list`：列出随包 PDF。
+- `python3 scripts/pdf_catalog.py list`：列出随包 PDF 和 XLSX。
 - `python3 scripts/pdf_catalog.py find 2027 规范`：按文件名筛选。
+- `python3 scripts/pdf_catalog.py find RMU2027 答疑`：定位规则答疑工作簿。
 - 规则原件位于 `assets/rules-originals/`，岗位说明位于 `assets/division-roles-original.pdf`。
 
 ## 原始文件
@@ -32,5 +33,8 @@
 | RoboMaster_裁判系统串口协议附录_V1.9.0（20250703） (1).pdf | 1.4 |
 | RoboMaster_裁判系统用户手册V1.5.pdf | 4.3 |
 | division-roles-original.pdf | 0.0 |
+| RMU2027官方规则答疑.xlsx | 0.262 |
 
 2026/ 子目录包含一份 2027 RMUC 英文手册。适用年份以文件名和原文为准。SHA-256 与原项目相对来源路径见 `bundled-library.json`。当前规则须另查官方最新版本与勘误。
+
+规则答疑 XLSX 保留用户提供的原始文件，来源路径见 JSON 目录。回答时读取相关工作表和单元格，并引用工作表名与单元格范围；收录日期不代表官方最新版本。
