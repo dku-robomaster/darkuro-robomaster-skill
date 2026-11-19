@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Verify original PDF integrity and the PDF-only distribution layout."""
+"""Verify original PDF/XLSX integrity and the original-document distribution layout."""
 import hashlib
 import json
 from pathlib import Path
 import re
 import sys
+import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_SKILL = REPO / "skills/dku-robomaster"
@@ -35,31 +36,44 @@ def verify(skill=DEFAULT_SKILL):
             if not within(skill, relative.split("#", 1)[0]).is_file():
                 raise ValueError("Missing Skill reference: " + relative)
     catalog = json.loads((skill / "references/bundled-library.json").read_text(encoding="utf-8"))
-    if catalog.get("format") != "original-pdf" or "wiki_manifest" in catalog:
-        raise ValueError("Expected the original-PDF catalogue format")
+    if catalog.get("format") not in {"original-pdf", "original-documents"} or "wiki_manifest" in catalog:
+        raise ValueError("Expected an original-document catalogue format")
     rules = catalog["rules"]
     core = catalog["core_documents"]
     if not rules or not core:
-        raise ValueError("Missing PDF catalogue entries")
+        raise ValueError("Missing document catalogue entries")
     declared = set()
     for record in rules + core:
         if "extracted_text" in record:
             raise ValueError("Legacy extracted-text catalogue entry")
         path = within(skill, record["original"])
         data = path.read_bytes()
-        if path in declared or path.suffix.lower() != ".pdf":
-            raise ValueError("Duplicate or invalid PDF: " + record["original"])
+        if path in declared or path.suffix.lower() not in {".pdf", ".xlsx"}:
+            raise ValueError("Duplicate or invalid document: " + record["original"])
         declared.add(path)
-        if not data.startswith(b"%PDF-"):
-            raise ValueError("Not a PDF: " + record["original"])
+        if path.suffix.lower() == ".pdf":
+            if not data.startswith(b"%PDF-"):
+                raise ValueError("Not a PDF: " + record["original"])
+        else:
+            try:
+                with zipfile.ZipFile(path) as archive:
+                    required = {"[Content_Types].xml", "xl/workbook.xml", "xl/_rels/workbook.xml.rels"}
+                    if not required.issubset(archive.namelist()) or archive.testzip() is not None:
+                        raise ValueError("Invalid XLSX structure: " + record["original"])
+            except zipfile.BadZipFile as error:
+                raise ValueError("Not an XLSX: " + record["original"]) from error
         if len(data) != record["size_bytes"] or hashlib.sha256(data).hexdigest() != record["sha256"]:
-            raise ValueError("PDF integrity mismatch: " + record["original"])
-    if declared != {p.resolve() for p in (skill / "assets").rglob("*.pdf")}:
-        raise ValueError("PDF files and catalogue do not match")
+            raise ValueError("Document integrity mismatch: " + record["original"])
+    if declared != {p.resolve() for p in (skill / "assets").rglob("*")
+                    if p.is_file() and p.suffix.lower() in {".pdf", ".xlsx"}}:
+        raise ValueError("Document files and catalogue do not match")
     for script in (skill / "scripts").glob("*.py"):
         compile(script.read_text(encoding="utf-8"), str(script), "exec")
-    return {"pdfs": len(declared), "rules_pdfs": len(rules),
-            "core_pdfs": len(core), "text_files": 0,
+    return {"pdfs": sum(p.suffix.lower() == ".pdf" for p in declared),
+            "xlsx": sum(p.suffix.lower() == ".xlsx" for p in declared),
+            "rules_pdfs": sum(Path(r["original"]).suffix.lower() == ".pdf" for r in rules),
+            "core_pdfs": sum(Path(r["original"]).suffix.lower() == ".pdf" for r in core),
+            "text_files": 0,
             "files": sum(p.is_file() for p in skill.rglob("*"))}
 
 
